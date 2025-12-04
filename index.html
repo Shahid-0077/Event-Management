@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shaadi & Events India</title>
+  <style>
+    body { margin:0; font-family:Arial, sans-serif; background:#f4f4f4; color:#333; }
+    header { background:#c33427; color:#fff; padding:30px 20px; text-align:center; }
+    nav { background:#e25b47; padding:12px; display:flex; justify-content:center; gap:25px; }
+    nav a { color:#fff; text-decoration:none; font-weight:bold; }
+
+    .hero { background:url('https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat; height:360px; display:flex; justify-content:center; align-items:center; color:#fff; font-size:2.4rem; text-shadow:0 0 8px #000; font-weight:bold; }
+
+    section { max-width:1100px; margin:auto; padding:40px 20px; }
+    h2 { color:#c33427; }
+
+    /* Event listings */
+    .events { display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:20px; }
+    .card { background:#fff; border-radius:10px; padding:20px; box-shadow:0 2px 6px rgba(0,0,0,0.15); }
+    .card img { width:100%; border-radius:10px; }
+    .card h3 { margin:10px 0; color:#c33427; }
+    .card button { background:#c33427; color:#fff; padding:10px 15px; border:none; border-radius:5px; cursor:pointer; }
+
+    /* Booking */
+    form { background:#fff; padding:25px; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.15); }
+    input, select, textarea { width:100%; padding:10px; margin:10px 0; border:1px solid #ccc; border-radius:5px; }
+    form button { background:#c33427; color:#fff; padding:12px; border:none; border-radius:5px; cursor:pointer; }
+
+    /* Testimonials */
+    .testimonials { display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:20px; }
+    .test { background:#fff; padding:20px; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.15); font-style:italic; }
+    .test strong { display:block; margin-top:10px; color:#c33427; font-style:normal; }
+
+    footer { background:#333; color:#fff; text-align:center; padding:20px; margin-top:40px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Shaadi & Events India</h1>
+    <p>Your Trusted Indian Event Management Experts</p>
+  </header>
+
+  <nav>
+    <a href="#events">Events</a>
+    <a href="#booking">Book Event</a>
+    <a href="#testimonials">Testimonials</a>
+  </nav>
+
+  <div class="hero">We Bring Dreams to Life</div>
+
+  <!-- Event Listings -->
+  <section id="events">
+    <h2>Our Event Services</h2>
+    <div class="events">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1603899122775-98908e72e7b2?auto=format&fit=crop&w=900&q=60" />
+        <h3>Royal Indian Wedding</h3>
+        <p>Complete wedding planning: decor, catering, venue & rituals.</p>
+        <button>Enquire Now</button>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1555255707-c07966088b7b?auto=format&fit=crop&w=900&q=60" />
+        <h3>Corporate Events</h3>
+        <p>Conferences, award functions, annual meets & brand launches.</p>
+        <button>Enquire Now</button>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1529634896488-906c107a67dd?auto=format&fit=crop&w=900&q=60" />
+        <h3>Festive Celebrations</h3>
+        <p>Diwali parties, Holi events, Navratri nights & more.</p>
+        <button>Enquire Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Form -->
+  <section id="booking">
+    <h2>Book Your Event</h2>
+    <form>
+      <label>Your Name</label>
+      <input type="text" placeholder="Enter your name" required />
+
+      <label>Email</label>
+      <input type="email" placeholder="Enter your email" required />
+
+      <label>Event Type</label>
+      <select>
+        <option>Wedding</option>
+        <option>Corporate</option>
+        <option>Birthday</option>
+        <option>Festive Celebration</option>
+      </select>
+
+      <label>Event Date</label>
+      <input type="date" />
+
+      <label>Details</label>
+      <textarea rows="4" placeholder="Describe your requirements..."></textarea>
+
+      <button>Submit Booking</button>
+    </form>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials">
+    <h2>What Clients Say</h2>
+    <div class="testimonials">
+      <div class="test">
+        "They planned my daughter's wedding beautifully. Everything was perfect!" 
+        <strong>- Meera Sharma, Delhi</strong>
+      </div>
+
+      <div class="test">
+        "Our corporate annual meet was flawless. Highly recommended!"
+        <strong>- Rajesh Gupta, Mumbai</strong>
+      </div>
+
+      <div class="test">
+        "Amazing decorations and smooth management for our Diwali office party."
+        <strong>- Anika Menon, Bengaluru</strong>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Shaadi & Events India | Crafted with ❤️ for Indian Celebrations
+  </footer>
+</body>
+</html>
